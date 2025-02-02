@@ -140,7 +140,16 @@
       border-bottom: 1px solid #1954ec; /* Horizontal corner line */
       border-right: 1px solid #1954ec; /* Vertical corner line */
     }
-    
+    .grid-line3 {
+    position: absolute !important;
+    left: 46px;
+    width: calc(95% - 60px); /* Match chart container width */
+    height: 0.5px;
+    background-color: #afafaf3b; /* Line color */
+    /* position: relative !important; */
+    z-index: 0 !important;
+  }
+
     @media screen and (max-width: 480px){ /* Tablet view */
       .bar3 .corner3 {
       position: absolute;
@@ -182,6 +191,15 @@
     .font-mobile3{
     font-size:xx-small;
   }
+  .grid-line3 {
+    left: 46px;
+    width: calc(95% - 32px); /* Match chart container width */
+    height: 0.5px;
+    background-color: #afafaf3b; /* Line color */
+    /* position: relative !important; */
+    z-index: 0 !important;
+  }
+
   }
   @media screen and (max-width: 767px){ /* Tablet view */
       .bar3 .corner3 {
@@ -295,16 +313,7 @@
         /* border-top-color: #1954ec; */
       }
     }
-    .grid-line3 {
-    position: absolute !important;
-    left: 46px;
-    width: calc(95% - 60px); /* Match chart container width */
-    height: 0.5px;
-    background-color: #afafaf3b; /* Line color */
-    /* position: relative !important; */
-    z-index: 0 !important;
-  }
-
+    
   .grid-line-1m3 {
     bottom: 55px; /* 80% height for $3 Million */
   }
